@@ -20,5 +20,15 @@ namespace OrderManagement
                 cost = 2.5;
             }
             else if (weightKG < 5)
+            {
+                cost = 8;
+            }
+            else
+            {
+                throw new ArgumentException("Weight must be under 5 kg");
+            }
+            return cost;
+        }
+
     }
 }
